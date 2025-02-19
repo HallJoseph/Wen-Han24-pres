@@ -375,6 +375,25 @@
 ]
 
 #slide[
+  == Why I care
+  #set enum(numbering: "a.")
+  #v(1fr)
+  - My research looks at trying to understand differences in properties based on selection method
+  - I have an X-ray catalogue (eRASS)
+  - Need an optical and this one is:
+    + Really big
+    + Really well overlapped with eRASS
+  #v(1fr)
+]
+
+#slide[
+  == Why I care
+  #figure(
+    image("assets/WH-eRass_overlap.png")
+  )
+]
+
+#slide[
   #bibliography("bib.bib", style:"elsevier-harvard")
 ]
 
