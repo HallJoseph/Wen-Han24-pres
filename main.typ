@@ -10,7 +10,7 @@
     Joseph Hall #h(1fr) | #h(1fr) Astro Lunch #h(1fr) | #h(1fr) #date #h(1fr) | #h(1fr) *#toolbox.slide-number*
     ])
     )
-#set text(size: 30pt, font: "helvetica")
+#set text(size: 25pt, font: "helvetica")
 
 
 #slide[
@@ -128,6 +128,37 @@
         #v(1fr)
         #figure(
           image("assets/redshift proof.jpeg", width: 100%)
+        ) <fig-thing>
+        #v(1fr)
+      ]
+  )
+]
+
+#slide[
+  == #cite(<wenPhotometricRedshiftsGalaxies2021>, form: "prose") -- Masses
+  
+  #grid(
+      columns: (70%, 1fr),
+      column-gutter: 10pt,
+      [
+        #v(1fr)
+        - Links stellar mass and luminosity: 
+        $
+          log (m_#text("stellar") / M_#sym.dot.circle) = gamma log (L_#text("W1")/L_*) \ + f(z, Z)
+        $
+
+        - Uses this to get a mass based *richness* similar to #cite(<wenCalibrationOpticalMass2015>, form: "prose"):
+
+        $
+          lambda_500 = m_(500,#text("stellar")) (1+z)^0.21 / m_(*,#text("stellar"))
+        $
+
+        #v(1fr)
+      ],
+      [
+        #v(1fr)
+        #figure(
+          image("assets/wh21_masses.png", width: 100%)
         ) <fig-thing>
         #v(1fr)
       ]
