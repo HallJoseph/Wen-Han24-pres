@@ -10,7 +10,7 @@
     Joseph Hall #h(1fr) | #h(1fr) Astro Lunch #h(1fr) | #h(1fr) #date #h(1fr) | #h(1fr) *#toolbox.slide-number*
     ])
     )
-#set text(size: 25pt, font: "helvetica")
+#set text(size: 30pt, font: "helvetica")
 
 
 #slide[
@@ -40,17 +40,80 @@
   #v(1fr)
 ]
 
+// #slide[
+//   #outline(
+//     depth: 1,
+//     title: "Outline"
+//   )
+// ]
+
 #slide[
-  #outline(
-    depth: 1,
-    title: "Outline"
-  )
+  #set align(horizon)
+  = Background
 ]
 
 #slide[
+  = Background
   
+  #grid(
+    columns: (33%, 1fr),
+    column-gutter: (10pt),
+    [
+      #set text(size: 15pt)
+      #figure(
+        image("assets/wen-han15-cover.svg", width: 100%),
+        caption: [
+          #cite(<wenCalibrationOpticalMass2015>, form: "prose")
+        ]
+      )
+    ],
+    [
+      #set text(size: 15pt)
+      #figure(
+        image("assets/wen-han21-cover.svg", width: 100%),
+        caption: [
+          #cite(<wenPhotometricRedshiftsGalaxies2021>, form: "prose")
+          ]
+      )
+    ],
+    [
+      #set text(size: 15pt)
+      #figure(
+        image("assets/wen-han22-cover.svg", width: 100%)
+      )
+    ]
+  )
+
+  
+
+]
+
+#slide[
+  = Background
+  #grid(
+      columns: (50%, 1fr),
+      column-gutter: 1pt,
+      [
+        #figure(
+          image("assets/wen-han22-cover.svg", width: 100%),
+          caption: [This is an example.]
+        ) <fig-thing>
+      ],
+      [
+        See @fig-thing.
+
+        #lorem(40)
+      ]
+  )
+
+
 ]
 
 #slide[
   = Why do we (I) care?
 ]
+
+#slide[
+  #bibliography("bib.bib", style:"elsevier-harvard")
+]
+
