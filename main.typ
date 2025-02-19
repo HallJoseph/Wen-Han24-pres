@@ -103,7 +103,7 @@
       $
         lambda_(*,500) = L_500 / L_*  E(z)^1.4
       $
-      - Find that this is redshift independent
+      - This is redshift independent & a good proxy
 
       #v(1fr)
     ]
@@ -111,24 +111,27 @@
 ]
 
 #slide[
-  = Background
+  == #cite(<wenPhotometricRedshiftsGalaxies2021>, form: "prose") -- Redshifts
   
   #grid(
-      columns: (45%, 1fr),
-      column-gutter: 1pt,
+      columns: (70%, 1fr),
+      column-gutter: 10pt,
       [
-        #figure(
-          image("assets/wen-han22-cover.svg", width: 90%)
-        ) <fig-thing>
+        #v(1fr)
+        - Combines spectroscopic and multi-band imaging surveys
+        - Places galaxies with spectro-$z$ in colour space
+        - Uses a *nearest neighbour* algorithm to estimate the photo-$z$ of galaxies only in imaging survey
+
+        #v(1fr)
       ],
       [
-        See @fig-thing.
-
-        #lorem(0)
+        #v(1fr)
+        #figure(
+          image("assets/redshift proof.jpeg", width: 100%)
+        ) <fig-thing>
+        #v(1fr)
       ]
   )
-
-
 ]
 
 #slide[
