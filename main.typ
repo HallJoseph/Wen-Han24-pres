@@ -85,16 +85,8 @@
 #slide[
   == #cite(<wenCalibrationOpticalMass2015>, form: "prose") -- Calibration
   #grid(
-    columns: (40%, 1fr),
+    columns: (60%, 1fr),
     column-gutter: (10pt),
-    [
-      #v(1fr)
-      #set text(size: 15pt)
-      #figure(
-        image("assets/wen-han15-cover.svg", width: 100%)
-      )
-      #v(1fr)
-    ],
     [
       #v(1fr)
       
@@ -106,7 +98,15 @@
       - This is redshift independent & a good proxy
 
       #v(1fr)
-    ]
+    ],
+    [
+      #v(1fr)
+      #set text(size: 15pt)
+      #figure(
+        image("assets/richness_mass_proxy.jpg", width: 100%)
+      )
+      #v(1fr)
+    ],
   )
 ]
 
@@ -159,6 +159,34 @@
         #v(1fr)
         #figure(
           image("assets/wh21_masses.png", width: 100%)
+        ) <fig-thing>
+        #v(1fr)
+      ]
+  )
+]
+
+#slide[
+  == #cite(<wenClustersGalaxies152022>, form: "prose") -- Extending Deeper
+  
+  #grid(
+      columns: (50%, 1fr),
+      column-gutter: 10pt,
+      [
+        #v(1fr)
+        - Takes what they were doing before and uses *DES* to find clusters to \ $z = 1.5$
+        - ...
+        - Not much else different but proves validity of methods to deeper data
+
+        #v(1fr)
+      ],
+      [
+        #set text(size: 15pt)
+        #v(1fr)
+        #figure(
+          image("assets/wh22_depth.jpeg", width: 100%),
+          caption: [
+            $i$-band magnitudes of the training sample as a function of redshift. Taken from #cite(<wenClustersGalaxies152022>, form: "prose", supplement: "Fig. 1")
+          ]
         ) <fig-thing>
         #v(1fr)
       ]
