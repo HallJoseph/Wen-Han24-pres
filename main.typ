@@ -394,6 +394,22 @@
 ]
 
 #slide[
+  = Summary
+  #set enum(numbering: "a.")
+  #v(1fr)
+  - This is a big catalogue (*1.58 Million!*) with reliable results
+  - Methods developed over a decade help to guarantee robustness of results
+  - Fantastic for work on cluster population studies
+  - Also does stuff with cluster evolution
+  #v(1fr)
+
+  == Any Questions?
+
+  #v(1fr)
+]
+
+
+#slide[
   #bibliography("bib.bib", style:"elsevier-harvard")
 ]
 
