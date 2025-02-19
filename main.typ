@@ -254,8 +254,19 @@
   - Only using massive clusters ($M_* >= 10^10 M_#sym.dot.circle$)
   - Use the equations calibrated before to find cluster radii and richness
   - Define a cluster when *$lambda_500 >= 10$ and $N_"gal" >= 6$*
+  #v(1fr)
 ]
-  
+
+#slide[
+  == Found Clusters
+  #set text(size: 15pt)
+      #figure(
+        image("assets/DESI_Map.jpg", width: 100%),
+        caption: [
+          Density map of clusters from #cite(<wenCatalog158Million2024>, form: "prose", supplement: "Fig. 6")
+        ]
+      )
+]  
 
 #slide[
   == Cluster Redshifts
@@ -287,6 +298,46 @@
   )
   #v(1fr)
 
+  #v(1fr)
+]
+
+#slide[
+  == Verification
+  #v(1fr)
+  - Very important step when finding $>800,000$ new clusters
+  - Compare results with clusters found and measured using X-ray and SZ observations
+  - Good completeness with X-ray -- 82% of eRASS1 clusters detected in sample overlap
+  - 95% of SZ clusters overlap (in the ACT catalogue)
+  - No verification of cluster properties comparing with these measurements
+  #v(1fr)
+]
+
+#slide[
+  == Verification
+  
+  But do verify against other optical catalogues:
+
+  #grid(
+      columns: (30%, 1fr),
+      column-gutter: 10pt,
+      [
+        #set text(size: 15pt)
+        #v(1fr)
+        #figure(
+          image("assets/wh24_completeness.jpg", width: 100%)
+        )
+        #v(1fr)
+      ],
+      [
+        #set text(size: 15pt)
+        #v(1fr)
+        #figure(
+          image("assets/wh24_opt_cat_comp.jpg", width: 100%)
+        )
+        #v(1fr)
+      ]
+  )
+  #v(1fr)
   #v(1fr)
 ]
 
