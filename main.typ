@@ -375,7 +375,7 @@
 ]
 
 #slide[
-  == Why I care
+  == Why I care:
   #set enum(numbering: "a.")
   #v(1fr)
   - My research looks at trying to understand differences in properties based on selection method
@@ -387,7 +387,7 @@
 ]
 
 #slide[
-  == Why I care
+  == Why I care:
   #figure(
     image("assets/WH-eRass_overlap.png")
   )
