@@ -50,6 +50,7 @@
 #slide[
   #set align(horizon)
   = Background
+  _(In which Joe speed reviews 3 older papers)_
 ]
 
 #slide[
@@ -60,7 +61,7 @@
     column-gutter: (10pt),
     [
       #set align(horizon)
-
+      - Clusters are big, biggest virialised things going
       - We need to be able to find and characterise clusters
       - This is an optical approach
       - Culmination of over a decade of work
@@ -194,7 +195,55 @@
 ]
 
 #slide[
-  = Why do we (I) care?
+  #set align(horizon)
+  = The Actual Paper
+  _(Trust me, it's *definitely* a pre-print)_
+]
+
+#slide[
+  == The Initial Data Processing
+  #grid(
+      columns: (50%, 1fr),
+      column-gutter: 10pt,
+      [
+        #v(1fr)
+        - Using *DESI* Legacy Imaging Surveys as the photometric base
+        - Same processes as before for finding redshifts, with spectro-$z$ from past work
+        - Slight tweak to finding $m_#text("stellar")$, using $r - z_#text("m")$ colour instead of $#text("W1")$ luminosity
+
+        #v(1fr)
+      ],
+      [
+        #set text(size: 15pt)
+        #v(1fr)
+        #figure(
+          image("assets/wh24_redshifts.jpg", width: 100%),
+          caption: [
+            $z_#text("m")$-band magnitude binned comparisons of spectro- and photo-$z$s. From #cite(<wenCatalog158Million2024>, form: "prose", supplement: "Fig. 1")
+          ]
+        ) <fig-thing>
+        #v(1fr)
+      ]
+  )
+]
+
+#slide[
+  == The Initial Data Processing
+  #set text(size: 15pt)
+  #v(1fr)
+  #figure(
+    image("assets/wh24_z_comparison.jpg", width: 100%),
+    caption: [
+      Comparisons of #cite(<wenCatalog158Million2024>, form: "prose") photo-$z$ and those published by DESI in \ #cite(<zhouDESIClusteringGalaxies2021>, form:"prose") without $i$-band mags
+    ]
+  ) <fig-thing>
+  #v(1fr)
+]
+
+#slide[
+  #set align(horizon)
+  = Why do _I_ care?
+  _(Yeah, why do you? Aren't you an X-ray astronomer?)_
 ]
 
 #slide[
