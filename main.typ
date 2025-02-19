@@ -53,56 +53,78 @@
 ]
 
 #slide[
-  = Background
-  
+  == Context
+
   #grid(
-    columns: (33%, 1fr),
+    columns: (40%, 1fr),
     column-gutter: (10pt),
     [
+      #set align(horizon)
+
+      - We need to be able to find and characterise clusters
+      - This is an optical approach
+      - Culmination of over a decade of work
+
+    ],
+    [
       #set text(size: 15pt)
+      #v(1fr)
       #figure(
-        image("assets/wen-han15-cover.svg", width: 100%),
+        image("assets/DESI_Map.jpg"),
         caption: [
-          #cite(<wenCalibrationOpticalMass2015>, form: "prose")
+          Density map of clusters from #cite(<wenCatalog158Million2024>, form: "prose", supplement: "Fig. 6")
         ]
       )
-    ],
-    [
-      #set text(size: 15pt)
-      #figure(
-        image("assets/wen-han21-cover.svg", width: 100%),
-        caption: [
-          #cite(<wenPhotometricRedshiftsGalaxies2021>, form: "prose")
-          ]
-      )
-    ],
-    [
-      #set text(size: 15pt)
-      #figure(
-        image("assets/wen-han22-cover.svg", width: 100%)
-      )
+      #v(1fr)
     ]
-  )
 
-  
+  )
 
 ]
 
 #slide[
-  = Background
+  == #cite(<wenCalibrationOpticalMass2015>, form: "prose") -- Calibration
   #grid(
-      columns: (50%, 1fr),
+    columns: (40%, 1fr),
+    column-gutter: (10pt),
+    [
+      #v(1fr)
+      #set text(size: 15pt)
+      #figure(
+        image("assets/wen-han15-cover.svg", width: 100%)
+      )
+      #v(1fr)
+    ],
+    [
+      #v(1fr)
+      
+      - Calibrated a relationship between $r_500$ and $L_(1 #text("Mpc"))$
+      - Established *richness* as an optical mass proxy: 
+      $
+        lambda_(*,500) = L_500 / L_*  E(z)^1.4
+      $
+      - Find that this is redshift independent
+
+      #v(1fr)
+    ]
+  )
+]
+
+#slide[
+  = Background
+  
+  #grid(
+      columns: (45%, 1fr),
       column-gutter: 1pt,
       [
         #figure(
-          image("assets/wen-han22-cover.svg", width: 100%),
-          caption: [This is an example.]
+          image("assets/wen-han22-cover.svg", width: 90%)
         ) <fig-thing>
       ],
       [
         See @fig-thing.
 
-        #lorem(40)
+        #lorem(0)
       ]
   )
 
