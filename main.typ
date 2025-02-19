@@ -342,6 +342,33 @@
 ]
 
 #slide[
+  == Evolution
+  #grid(
+      columns: (60%, 1fr),
+      column-gutter: 10pt,
+      [
+        #v(50pt)
+        - Apparently, clusters evolve
+        - They look at two particular evolutions:
+          - Dynamical states
+          - BCG growth
+        #v(1fr)
+        #text("(I maybe didn't get round to reading this bit)", size: 10pt)
+      ],
+      [
+        #set text(size: 15pt)
+        #v(1fr)
+        #figure(
+          image("assets/wh24_relaxation.jpg", width: 100%)
+        )
+        #v(1fr)
+      ]
+  )
+  #v(1fr)
+  #v(1fr)
+]
+
+#slide[
   #set align(horizon)
   = Why do _I_ care?
   _(Yeah, why do you? Aren't you an X-ray astronomer?)_
