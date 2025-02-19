@@ -241,6 +241,42 @@
 ]
 
 #slide[
+  == Finding Clusters
+  #v(1fr)
+  - Looking for overdensity in redshifts
+  - Take slices on *candidate "BCGs"* defined with half slice thickness:
+  $
+    Delta z = cases(
+      0.04 (1+z) "for" z <= 0.7,
+      0.15z - 0.037 "for" z >0.7
+    )
+  $
+  - Only using massive clusters ($M_* >= 10^10 M_#sym.dot.circle$)
+  - Use the equations calibrated before to find cluster radii and richness
+  - Define a cluster when *$lambda_500 >= 10$ and $N_"gal" >= 6$*
+
+  #v(1fr)
+  // #grid(
+  //     columns: (60%, 1fr),
+  //     column-gutter: 10pt,
+  //     [
+  //       
+  //     ],
+  //     [
+  //       #set text(size: 15pt)
+  //       #v(1fr)
+  //       #figure(
+  //         image("assets/wh24_redshifts.jpg", width: 100%),
+  //         caption: [
+  //           $z_#text("m")$-band magnitude binned comparisons of spectro- and // photo-$z$s. From #cite(<wenCatalog158Million2024>, form: "prose", // supplement: "Fig. 1")
+  //         ]
+  //       ) <fig-thing>
+  //       #v(1fr)
+  //     ]
+  // )
+]
+
+#slide[
   #set align(horizon)
   = Why do _I_ care?
   _(Yeah, why do you? Aren't you an X-ray astronomer?)_
