@@ -254,26 +254,40 @@
   - Only using massive clusters ($M_* >= 10^10 M_#sym.dot.circle$)
   - Use the equations calibrated before to find cluster radii and richness
   - Define a cluster when *$lambda_500 >= 10$ and $N_"gal" >= 6$*
+]
+  
+
+#slide[
+  == Cluster Redshifts
+  
+  Defined in one of the following ways:
+  1. The *spectroscopic* redshift of the BCG, if available
+  2. Available spectroscopic redshifts of other galaxies, if within $0.025(1+z)$ of cluster photo-$z$
+  3. Unclear, but I think using the average photo-$z$ of members as in #cite(<wenClustersGalaxies152022>, form:"prose")
+
+  #grid(
+      columns: (50%, 1fr),
+      column-gutter: 10pt,
+      [
+        #set text(size: 15pt)
+        #v(1fr)
+        #figure(
+          image("assets/wh24_z_hist.jpg", width: 75%)
+        )
+        #v(1fr)
+      ],
+      [
+        #set text(size: 15pt)
+        #v(1fr)
+        #figure(
+          image("assets/wh24_zCl_verification.jpg", width: 75%)
+        )
+        #v(1fr)
+      ]
+  )
+  #v(1fr)
 
   #v(1fr)
-  // #grid(
-  //     columns: (60%, 1fr),
-  //     column-gutter: 10pt,
-  //     [
-  //       
-  //     ],
-  //     [
-  //       #set text(size: 15pt)
-  //       #v(1fr)
-  //       #figure(
-  //         image("assets/wh24_redshifts.jpg", width: 100%),
-  //         caption: [
-  //           $z_#text("m")$-band magnitude binned comparisons of spectro- and // photo-$z$s. From #cite(<wenCatalog158Million2024>, form: "prose", // supplement: "Fig. 1")
-  //         ]
-  //       ) <fig-thing>
-  //       #v(1fr)
-  //     ]
-  // )
 ]
 
 #slide[
