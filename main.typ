@@ -1,5 +1,5 @@
 // Set up and imports
-#let date = datetime.today().display()
+#let date = datetime(day: 19, month: 2, year: 2025).display()
 
 #import "@preview/polylux:0.4.0": *
 
@@ -12,6 +12,38 @@
     )
 #set text(size: 25pt, font: "helvetica")
 
+
+#slide[
+
+  #set page(
+    footer: text(
+      size: 25pt,
+      style: "normal",
+      [
+        Joseph Hall #h(1fr) #date
+      ]
+    )
+  )
+  #[
+    #set align(horizon)
+    #[
+      #set text(size:50pt, weight: "black")
+      A Catalogue of 1.58 Million Clusters of Galaxies from the DESI Legacy Survey
+    ]
+
+    #[
+      #set text(size: 30pt, style: "italic")
+      Z . L. Wen and J. L. Han (2024)
+    ]
+  ]
+
+  #v(1fr)
+]
+
+#slide[
+  #set align(horizon)
+  = News?
+]
 
 #slide[
 
