@@ -82,7 +82,7 @@
 #slide[
   #set align(horizon)
   = Background
-  _(In which Joe speed reviews 3 older papers)_
+  _(In which Joe speed reviews 3.0 older papers)_
 ]
 
 #slide[
